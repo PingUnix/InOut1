@@ -1,0 +1,28 @@
+<h1 >
+  this is a {{title}} + {{msg}}
+</h1>
+
+<button (click)="nextCount()" >change count</button> <br/>
+
+<app-child [counter1]="count"></app-child> 
+<br/>
+
+
+
+
+<button (click)="changePop()">change count</button> <br/>
+<app-child [prop] ="pop" [counter1]="count"></app-child>
+
+<ul>
+  <li *ngFor="let nm of NameArray"> {{nm||'default name'}}</li>
+  
+</ul>
+<!-- this is the list from the app view -->
+<input type="text" [(ngModel)] ="title"/> input a text 
+
+<app-user *ngFor="let nm of NameArray" [msg]="nm"></app-user>
+<!-- this is the list from user view . in the loop of ngFor, msg can be used 
+to transfer name from app to user component, since msg is a member 
+of user-->
+
+

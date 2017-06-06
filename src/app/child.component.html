@@ -1,0 +1,15 @@
+<div [style.display]="flag_c">
+<h2 *ngIf="flag_c">
+ child pop = {{counter1}}
+</h2>
+
+</div>
+
+<div [style.display]="flag_p">
+<h2 style="color:red" *ngIf="flag_p">
+ child pop =  {{prop}} 
+</h2>
+</div>
+<ul>
+  <li *ngFor="let sa of stringArray">{{sa}}</li>
+</ul>
