@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { UserComponent } from './user.component';
 import { ChildComponent } from './child.component';
 @Component({
-  selector: 'app-root',
+  selector: 'myapp1',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
